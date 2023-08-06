@@ -6,14 +6,14 @@ async function weatherReport(){
     
     let div = document.getElementsByClassName("container")[1] 
     div.style.display="block"
-    console.log(div)
+    // console.log(div)
 
     await fetch(url).then((response)=>{
-        console.log(response.status)
-        console.log(response.ok)
+        // console.log(response.status)
+        // console.log(response.ok)
         return response.json()
     }).then((value)=>{
-        console.log(value)
+        // console.log(value)
 
 
         let observed_time = document.getElementById('observed_time')
